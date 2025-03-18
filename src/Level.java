@@ -1,8 +1,8 @@
 public class Level {
     private int xPosition;
-    private Block[][] blocks;
-    public Level(Block[][] blocks) {
-        this.blocks = blocks;
+    private LevelObject[][] levelObjects;
+    public Level(LevelObject[][] levelObjects) {
+        this.levelObjects = levelObjects;
         xPosition = 0;
     }
     public void updatePosition() {
@@ -12,8 +12,8 @@ public class Level {
     public int getxPosition() {
         return xPosition;
     }
-    public Block getBlock(int x, int y) {
+    public LevelObject getObject(int x, int y) {
         // TODO: add out-of-bound checking
-        return blocks[y][x];
+        return levelObjects[y][x];
     }
 }

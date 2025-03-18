@@ -1,0 +1,2 @@
+public class ShortSpike {
+}

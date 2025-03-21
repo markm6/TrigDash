@@ -1,2 +1,2 @@
-public class ShipPortal extends Portal {
+public class ShipPortal {
 }

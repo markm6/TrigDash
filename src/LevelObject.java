@@ -51,8 +51,9 @@ public class LevelObject {
     }
 
     // TODO: Render function with screen parameter.
+
     public void render() {
-        // use image
+        
     }
 
 }

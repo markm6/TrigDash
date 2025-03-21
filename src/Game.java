@@ -9,7 +9,7 @@ import java.awt.event.*;
 import java.awt.Font;
 import java.awt.Point;
 
-public class DisplayPanel extends JPanel implements KeyListener, MouseListener, ActionListener {
+public class Game extends JPanel implements KeyListener, MouseListener, ActionListener {
     private int rectX;
     private int rectY;
     private Rectangle rect1;
@@ -19,8 +19,8 @@ public class DisplayPanel extends JPanel implements KeyListener, MouseListener, 
     private double velocity;
     private String message;
     private Color rectColor;
-
-    public DisplayPanel() {
+    private Player player;
+    public Game() {
         rectX = 50;
         rectY = 30;
         velocity = -10;
@@ -30,7 +30,7 @@ public class DisplayPanel extends JPanel implements KeyListener, MouseListener, 
         rect2 = new Rectangle(20, 20);
         message = "mouse click: ";
         rectColor = Color.RED;
-
+        player = new Player(true);
         // UPDATE timer to be 10ms, which will now trigger 100 times per second
         Timer timer = new Timer(10, this);
         timer.start();

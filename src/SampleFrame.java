@@ -7,7 +7,7 @@ public class SampleFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1280, 720);
         frame.setLocationRelativeTo(null);
-        DisplayPanel panel = new DisplayPanel();
+        Game panel = new Game();
         frame.add(panel);
         frame.setVisible(true);
     }

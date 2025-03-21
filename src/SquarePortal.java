@@ -1,2 +1,2 @@
-public class SquarePortal extends Portal {
+public class SquarePortal {
 }
